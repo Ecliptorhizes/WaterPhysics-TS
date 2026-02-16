@@ -54,7 +54,16 @@ function TS.import(context, module, ...)
 	end
 
 	if module.ClassName ~= "ModuleScript" then
-		error(OUTPUT_PREFIX .. "Failed to import! Expected ModuleScript, got " .. module.ClassName, 2)
+		if module.ClassName == "Folder" then
+			local init = module:FindFirstChild("init")
+			if init and init.ClassName == "ModuleScript" then
+				module = init
+			else
+				error(OUTPUT_PREFIX .. "Failed to import! Expected ModuleScript, got " .. module.ClassName, 2)
+			end
+		else
+			error(OUTPUT_PREFIX .. "Failed to import! Expected ModuleScript, got " .. module.ClassName, 2)
+		end
 	end
 
 	currentlyLoading[context] = module

@@ -2,8 +2,7 @@
   "name": "water-physics-game",
   "globIgnorePaths": [
     "**/package.json",
-    "**/tsconfig.json",
-    "**/node_modules/**"
+    "**/tsconfig.json"
   ],
   "tree": {
     "$className": "DataModel",
@@ -23,7 +22,44 @@
             "$path": "node_modules/@rbxts"
           },
           "@flamework": {
-            "$path": "node_modules/@flamework"
+            "$className": "Folder",
+            "core": {
+              "$className": "Folder",
+              "out": {
+                "$className": "Folder",
+                "init": { "$path": "node_modules/@flamework/core/out/_init.luau" },
+                "reflect": { "$path": "node_modules/@flamework/core/out/reflect.luau" },
+                "flamework": { "$path": "node_modules/@flamework/core/out/flamework.luau" },
+                "modding": { "$path": "node_modules/@flamework/core/out/modding.luau" },
+                "metadata": { "$path": "node_modules/@flamework/core/out/metadata.luau" },
+                "utility": { "$path": "node_modules/@flamework/core/out/utility.luau" },
+                "prelude": { "$path": "node_modules/@flamework/core/out/prelude.luau" }
+              }
+            },
+            "components": {
+              "$className": "Folder",
+              "out": {
+                "$className": "Folder",
+                "init": { "$path": "node_modules/@flamework/components/out/_init.luau" },
+                "baseComponent": { "$path": "node_modules/@flamework/components/out/baseComponent.luau" },
+                "components": { "$path": "node_modules/@flamework/components/out/components.luau" },
+                "componentTracker": { "$path": "node_modules/@flamework/components/out/componentTracker.luau" },
+                "utility": { "$path": "node_modules/@flamework/components/out/utility.luau" }
+              }
+            },
+            "networking": {
+              "$className": "Folder",
+              "out": {
+                "$className": "Folder",
+                "init": { "$path": "node_modules/@flamework/networking/out/_init.luau" },
+                "util": { "$path": "node_modules/@flamework/networking/out/util" },
+                "middleware": { "$path": "node_modules/@flamework/networking/out/middleware" },
+                "function": { "$path": "node_modules/@flamework/networking/out/function" },
+                "events": { "$path": "node_modules/@flamework/networking/out/events" },
+                "functions": { "$path": "node_modules/@flamework/networking/out/functions" },
+                "event": { "$path": "node_modules/@flamework/networking/out/event" }
+              }
+            }
           }
         }
       },

@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Water physics for Roblox - TypeScript, Flamework, and DataStore",
   "scripts": {
-    "build": "rbxtsc",
-    "watch": "rbxtsc -w"
+    "build": "node scripts/patch-flamework.js && rbxtsc && node scripts/patch-flamework.js",
+    "watch": "rbxtsc -w",
+    "postinstall": "node scripts/patch-flamework.js"
   },
   "devDependencies": {
     "@rbxts/compiler-types": "^2.3.0-types.1",

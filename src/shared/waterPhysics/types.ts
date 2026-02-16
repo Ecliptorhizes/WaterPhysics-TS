@@ -1,5 +1,6 @@
 /**
- * Water physics configuration and types
+ * Water physics interfaces and types.
+ * Default values live in config.ts.
  */
 export interface WaterPhysicsConfig {
 	/** Density of water (affects buoyancy) */
@@ -11,10 +12,3 @@ export interface WaterPhysicsConfig {
 	/** Whether to apply wave motion */
 	enableWaves: boolean;
 }
-
-export const DEFAULT_WATER_CONFIG: WaterPhysicsConfig = {
-	density: 1,
-	drag: 2,
-	buoyancy: 1.2,
-	enableWaves: true,
-};

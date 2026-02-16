@@ -5,7 +5,8 @@
 		"water-physics-ts:out/server/components/WaterZone.server@WaterZone": "server/components/WaterZone.server@WaterZone",
 		"water-physics-ts:out/server/services/DataStoreService@DataStoreService": "server/services/DataStoreService@DataStoreService",
 		"water-physics-ts:out/shared/network@GlobalEvents": "shared/network@GlobalEvents",
-		"water-physics-ts:out/shared/network@GlobalFunctions": "shared/network@GlobalFunctions"
+		"water-physics-ts:out/shared/network@GlobalFunctions": "shared/network@GlobalFunctions",
+		"water-physics-ts:out/server/services/WaterPhysicsService@WaterPhysicsService": "server/services/WaterPhysicsService@WaterPhysicsService"
 	},
 	"metadata": {}
 }
