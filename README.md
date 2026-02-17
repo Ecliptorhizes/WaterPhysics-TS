@@ -1,4 +1,4 @@
-# WaterPhysics-TS
+# WaterPhysics-TS (NOT FINISH BE AWARE)
 
 Water physics for Roblox built with **TypeScript**, **Flamework**, and **suphi-datastore** (Lapis equivalent).
 
